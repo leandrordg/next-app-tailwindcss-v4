@@ -13,43 +13,43 @@ Este é um template simples para iniciar projetos com **Next.js 15** e **Tailwin
 
 Para clonar o projeto, use o seguinte comando:
 
-'''bash
+```bash
 git clone 'https://github.com/leandrordg/next-app-tailwindcss-v4' <diretório>
-'''
+```
 
 ### 2. Crie um novo projeto com o template
 
 Ou crie um novo projeto com o template utilizando o comando:
 
-'''bash
+```bash
 pnpm create next-app@latest <diretório>
-'''
+```
 
 ### 3. Instale as dependências
 
 Para instalar as dependências do TailwindCSS v4, execute:
 
-'''bash
+```bash
 pnpm add tailwindcss @tailwindcss/postcss postcss
-'''
+```
 
 ### 4. Configure o PostCSS
 
 Crie o arquivo `postcss.config.mjs` com o seguinte conteúdo:
 
-'''js
+```js
 const config = { plugins: { "@tailwindcss/postcss": {} } };
 
 export default config;
-'''
+```
 
 ### 5. Execute o projeto
 
 Para rodar o projeto localmente, use o comando:
 
-'''bash
+```bash
 pnpm dev
-'''
+```
 
 Isso vai iniciar o servidor de desenvolvimento na sua máquina.
 
