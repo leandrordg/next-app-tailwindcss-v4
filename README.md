@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Template Next.js com TailwindCSS v4
 
-## Getting Started
+Este é um template simples para iniciar projetos com **Next.js 15** e **TailwindCSS v4**. Ele já está configurado com **PostCSS 8** e **JIT mode**, oferecendo uma base rápida e eficiente para começar o desenvolvimento de aplicações.
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+- Node.js 16 ou superior
+- **pnpm** (gerenciador de pacotes recomendado)
+
+## Como Usar
+
+### 1. Clone este repositório
+
+Para clonar o projeto, use o seguinte comando:
+
+'''bash
+git clone 'https://github.com/leandrordg/next-app-tailwindcss-v4' <diretório>
+'''
+
+### 2. Crie um novo projeto com o template
+
+Ou crie um novo projeto com o template utilizando o comando:
+
+'''bash
+pnpm create next-app@latest <diretório>
+'''
+
+### 3. Instale as dependências
+
+Para instalar as dependências do TailwindCSS v4, execute:
+
+'''bash
+pnpm add tailwindcss @tailwindcss/postcss postcss
+'''
+
+### 4. Configure o PostCSS
+
+Crie o arquivo `postcss.config.mjs` com o seguinte conteúdo:
+
+'''js
+const config = { plugins: { "@tailwindcss/postcss": {} } };
+
+export default config;
+'''
+
+### 5. Execute o projeto
+
+Para rodar o projeto localmente, use o comando:
+
+'''bash
 pnpm dev
-# or
-bun dev
-```
+'''
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Isso vai iniciar o servidor de desenvolvimento na sua máquina.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Recursos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15** com suporte a server-side rendering (SSR) e static site generation (SSG).
+- **TailwindCSS v4** com configuração pronta para uso.
+- Suporte para **Dark Mode**.
+- **PostCSS 8** com o plugin `@tailwindcss/postcss`.
 
-## Learn More
+## Contato
 
-To learn more about Next.js, take a look at the following resources:
+Leandro Rodrigues - [GitHub](https://github.com/leandrordg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+&copy; {new Date().getFullYear()} Leandro Rodrigues
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Este template está disponível para uso livre por qualquer pessoa.
