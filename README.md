@@ -55,15 +55,9 @@ Isso vai iniciar o servidor de desenvolvimento na sua máquina.
 
 ## Recursos
 
-- **Next.js 15** com suporte a server-side rendering (SSR) e static site generation (SSG).
+- **Next.js 15** com suporte a server actions e turbo-pack (7x mais rápido).
 - **TailwindCSS v4** com configuração pronta para uso.
 - Suporte para **Dark Mode**.
 - **PostCSS 8** com o plugin `@tailwindcss/postcss`.
-
-## Contato
-
-Leandro Rodrigues - [GitHub](https://github.com/leandrordg)
-
-&copy; {new Date().getFullYear()} Leandro Rodrigues
 
 > Este template está disponível para uso livre por qualquer pessoa.
